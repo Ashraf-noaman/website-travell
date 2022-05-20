@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.left-side{
+    background-color: #333;
+    height: 100vh;
+    padding: 15px;
+}
+.left-1{
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+    color: cyan;
+}
+.left-1 i{
+    margin-top: 4px;
+    margin-right: 1px;
+}
+.new-contact{
+    display: flex;
+    margin-top: 2rem;
+    border: 1px solid white;
+    padding: .5rem 1rem;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+.new-contact h3{
+    padding-left: 0.25rem;
+}
+.new-contact:hover{
+    background-color: cyan;
+    color: black;
+}
+.search{
+    background-color: #333;
+    width: 50%;
+    height: 50px;
+    border-radius: 25px;
+    margin: 1.5rem auto;
+    text-align: center;
+    padding-top: 10px;
+}
+.search-con{
+    justify-content: center;
+    margin-right: 200px;
+    
+}
+.search input{
+    padding: 10px 80px  10px 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+}
+.search i{
+    font-size: 20px;
+    color: white;
+}
+.right-side table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.right-side table th,
+.right-side table td{
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+.contactform > i{
+    font-size: 90px;
+}
+.contactform{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: cyan;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    z-index: 2;
+    display: none;
+}
+.contactform input{
+    width: 90%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: #888;
+    font-size: 20px;
+}
+.contactform input::placeholder{
+    font-size: 16px;
+}
+.btn{
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    margin-left: 40%;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.301);
+    padding: 10px 60px 10px 10px;
+    border-radius: 10px;
+}
+.close{
+    font-size: 30px;
+    position: absolute;
+    top: 2%;
+    left: 92%;
+    cursor: pointer;
+}
+
+.contactform i{
+    margin-left: 41%;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    display: none;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
